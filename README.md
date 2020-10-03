@@ -32,7 +32,8 @@ It was released in May 2019.
 | GM1910   | OnePlus 7 Pro    | China         | 18821         | 1            |
 | GM1911   | OnePlus 7 Pro    | India         | 18821         | 3            |
 | GM1915   | OnePlus 7 Pro    | T-Mobile      | 18831         | -            |
-| GM1920   | OnePlus 7 Pro NR | Europe (5G)   | 18827         | 3            |
+| GM1920   | OnePlus 7 Pro NR | Europe (5G)   | 18827         | -            |
+| GM1925   | OnePlus 7 Pro NR | US (Sprint 5G)| 18825         | 5            |
 
 _projectname = android projectname defined by the vendor system props "ro.boot.project_name" or "ro.vendor.boot.project_name"_
 _baseband = defined baseband by the vendor system prop "ro.boot.rf_version"_
