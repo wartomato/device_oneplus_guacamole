@@ -79,7 +79,7 @@ void vendor_load_properties()
         for (const auto &source : ro_product_props_default_source_order) {
             set_ro_product_prop(source, "brand", "OnePlus");
             set_ro_product_prop(source, "device", "OnePlus7Pro");
-            set_ro_product_prop(source, "manufacturer", "OPD");
+            set_ro_product_prop(source, "manufacturer", "OnePlus");
         }
         property_override("ro.build.product", "OnePlus7Pro");
         property_override("ro.display.series", "OnePlus 7 Pro");

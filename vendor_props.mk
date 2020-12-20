@@ -15,4 +15,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.device=guacamole \
     ro.vendor.build.real.device=true \
     vendor.product.device=guacamole \
-    vendor.product.manufacturer=OPD
+    vendor.product.manufacturer=OnePlus
