@@ -3,4 +3,5 @@
 #
 #e.g. 67313/1 https://gerrit.aicp-rom.com prebuilts/clang/host/linux-x86
 #
-100640/6 https://gerrit.aicp-rom.com vendor/aicp
+
+#100640/6 https://gerrit.aicp-rom.com vendor/aicp
