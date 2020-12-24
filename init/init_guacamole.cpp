@@ -136,7 +136,7 @@ void vendor_load_properties()
     property_override("ro.boot.flash.locked", "1");
     property_override("ro.boot.selinux", "enforcing");
     property_override("ro.boot.vbmeta.device_state", "locked");
-    property_override("ro.boot.verifiedbootstate", "green");
+    property_override("ro.boot.verifiedbootstate", "orange");
     property_override("ro.boot.veritymode", "enforcing");
     property_override("ro.boot.warranty_bit", "0");
     property_override("ro.build.release_type", "release");
