@@ -47,17 +47,9 @@ PRODUCT_PACKAGES += \
 #PRODUCT_PACKAGES += \
 #    JamesDSPManager
 
-## LiveDisplay
-#PRODUCT_PACKAGES += \
-#    vendor.lineage.livedisplay@2.0-service-sdm
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
-# Vibrator
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator@1.2-service.oneplus_msmnile
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 29
