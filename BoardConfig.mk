@@ -54,7 +54,3 @@ TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.qcom
 # Sensors
 SOONG_CONFIG_ONEPLUS_MSMNILE_SENSORS_ALS_POS_X := 1000
 SOONG_CONFIG_ONEPLUS_MSMNILE_SENSORS_ALS_POS_Y := 260
-
-#TWRP Support
-TW_USE_TOOLBOX := true
--include device/twrp/guacamole/twrp.mk
