@@ -1,14 +1,20 @@
+#include <stdio.h>
 #include <stdlib.h>
-
+#include <fcntl.h>
+#include <unistd.h>
 #include <android-base/file.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #include <android-base/strings.h>
+#include <sys/resource.h>
 
 #include "vendor_init.h"
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
+
+namespace android {
+namespace init {
 
 using android::base::GetProperty;
 using android::base::SetProperty;
@@ -89,7 +95,7 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1913");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RQ1A.201205.008.A1/6995931:user/release-keys");
+                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:10/QKQ1.190716.003/2009281532:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "name", "OnePlus7Pro_EEA");
@@ -101,7 +107,7 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1917");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RQ1A.201205.008.A1/6995931:user/release-keys");
+                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/2009281532:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro");
@@ -113,7 +119,7 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1910");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RQ1A.201205.008.A1/6995931:user/release-keys");
+                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro_CH/OnePlus7Pro:10/QKQ1.190716.003/2009281532:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro_CH");
@@ -125,7 +131,7 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1911");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RQ1A.201205.008.A1/6995931:user/release-keys");
+                set_ro_fingerprint(source, "OnePlus/OnePlus7Pro/OnePlus7Pro:10/QKQ1.190716.003/2009281532:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro");
@@ -137,7 +143,7 @@ void vendor_load_properties()
                 set_ro_product_prop(source, "model", "GM1917");
             }
             for (const auto &source : ro_fingerprints_default_source_order) {
-                set_ro_fingerprint(source, "google/coral/coral:11/RQ1A.201205.008.A1/6995931:user/release-keys");
+                set_ro_fingerprint(source, "google/coral/coral:11/RQ1A.210105.003/7005429:user/release-keys");
             }
             for (const auto &source : ro_product_props_default_source_order) {
                     set_ro_product_prop(source, "name", "OnePlus7Pro");
@@ -148,7 +154,7 @@ void vendor_load_properties()
     property_override("ro.boot.flash.locked", "1");
     property_override("ro.boot.selinux", "enforcing");
     property_override("ro.boot.vbmeta.device_state", "locked");
-    property_override("ro.boot.verifiedbootstate", "orange");
+    property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.boot.veritymode", "enforcing");
     property_override("ro.boot.warranty_bit", "0");
     property_override("ro.build.release_type", "release");
@@ -158,4 +164,7 @@ void vendor_load_properties()
     property_override("ro.vendor.build.release_type", "release");
     property_override("ro.vendor.build.type", "user");
     property_override("ro.warranty_bit", "0");
+}
+
+}
 }
