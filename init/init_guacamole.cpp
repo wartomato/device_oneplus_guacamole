@@ -1,20 +1,15 @@
-#include <stdio.h>
 #include <stdlib.h>
-#include <fcntl.h>
-#include <unistd.h>
+
 #include <android-base/file.h>
 #include <android-base/logging.h>
 #include <android-base/properties.h>
 #include <android-base/strings.h>
-#include <sys/resource.h>
 
+#include "property_service.h"
 #include "vendor_init.h"
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
 #include <sys/_system_properties.h>
-
-namespace android {
-namespace init {
 
 using android::base::GetProperty;
 using android::base::SetProperty;
@@ -164,7 +159,4 @@ void vendor_load_properties()
     property_override("ro.vendor.build.release_type", "release");
     property_override("ro.vendor.build.type", "user");
     property_override("ro.warranty_bit", "0");
-}
-
-}
 }
