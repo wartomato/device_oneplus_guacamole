@@ -19,7 +19,7 @@
 
 <resources>
     <!-- Color of the FOD view -->
-    <!-- <color name="config_fodColor">#ccccac</color> -->
+    <color name="config_fodColor">#ccccac</color>
 
     <!-- Allow devices to hide black gradient behind QS Panel -->
     <bool name="config_hideQSBlackGradient">true</bool>
