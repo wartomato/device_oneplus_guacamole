@@ -23,6 +23,8 @@
 #define _BDROID_BUILDCFG_H
 #define BTM_DEF_LOCAL_NAME   "OnePlus 7 Pro"
 // Disables read remote device feature
+#define BTM_WBS_INCLUDED TRUE
+#define BTIF_HF_WBS_PREFERRED TRUE
 #define MAX_ACL_CONNECTIONS   16
 #define MAX_L2CAP_CHANNELS    16
 
