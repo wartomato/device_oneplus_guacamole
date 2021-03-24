@@ -29,8 +29,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/mixer_paths_pahu.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_pahu.xml \
     $(LOCAL_PATH)/audio/mixer_paths_tavil.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths_tavil.xml
 
-#PRODUCT_COPY_FILES += \
-#    $(LOCAL_PATH)/audio/dolby/dax-default.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/dolby/dax-default.xml
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/audio/dolby/dax-default.xml:$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/29/etc/dolby/dax-default.xml
 
 # Camera
 PRODUCT_PACKAGES += \
@@ -50,3 +50,4 @@ PRODUCT_PACKAGES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
+
