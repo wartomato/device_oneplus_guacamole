@@ -34,6 +34,8 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_PACKAGES += \
+    vendor.lineage.camera.motor@1.0 \
+    vendor.lineage.camera.motor@1.0-service.oneplus_msmnile \
     OnePlusCameraHelper
 
 # Device init scripts
@@ -49,5 +51,3 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-# VNDK
-PRODUCT_SHIPPING_API_LEVEL := 28
