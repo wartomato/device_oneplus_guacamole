@@ -5,7 +5,7 @@
 #include <android-base/properties.h>
 #include <android-base/strings.h>
 
-#include "property_service.h"
+// #include "property_service.h" turned off because of missing chroma.h
 #include "vendor_init.h"
 
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
