@@ -21,4 +21,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.vendor.manufacturer=OnePlus \
     ro.vendor.build.real.device=true \
     vendor.product.device=guacamole \
-    vendor.product.manufacturer=OPD
+    vendor.product.manufacturer=OnePlus
+
+#additional properties
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true \
+persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
+persist.vendor.qcom.bluetooth.scram.enabled=true \
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=false
