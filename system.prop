@@ -1,9 +1,5 @@
 # build properties
-ro.actionable_compatible_property.enabled=true
 persist.fod.night_mode_disabled=true
-persist.vendor.btstack.enable.twsplus=true
-persist.vendor.bt.a2dp.hal.implementation=true
-persist.vendor.btstack.enable.lpa=true
 
 # Use Vulkan backend for Skia UI rendering
 debug.hwui.renderer=skiavk
