@@ -1,14 +1,10 @@
 cc_library_static {
     name: "libinit_guacamole",
-
-    include_dirs: [
-        "system/core/base/include",
-        "system/core/init",
-    ],
-    cflags: [
-        "-Wall",
-    ],
     srcs: ["init_guacamole.cpp"],
     recovery_available: true,
-    shared_libs: ["libbase"],
+    include_dirs: [
+        "system/core/base/include",
+        "system/core/init"
+    ],
+    whole_static_libs: ["libbase"]
 }
