@@ -1,8 +1,5 @@
 # build properties
 persist.fod.night_mode_disabled=true
 
-# Use Vulkan backend for Skia UI rendering
-debug.hwui.renderer=skiavk
-
 # USAP
 persist.device_config.runtime_native.usap_pool_enabled=true
