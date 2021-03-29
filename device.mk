@@ -47,7 +47,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     JamesDSPManager
 
+# Recovery
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.recovery_update=false
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
-
