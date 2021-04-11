@@ -53,7 +53,7 @@
     <string name="pathSRGBModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_srgb_color_mode</string>
 
     <!-- Path to devices DCIMode toggle file -->
-    <string name="pathDCIModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode</string>
+    <!-- <string name="pathDCIModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/native_display_p3_mode</string> -->
 
     <!-- Path to devices DCDMode toggle file -->
     <string name="pathDCDModeToggle">/sys/devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_bl_en</string>
@@ -89,7 +89,7 @@
     <string name="pathGestureRightSwipe">/proc/touchpanel/right_swipe_enable</string> -->
 
     <!-- Show/hide the QS tile, if device supports DC Dimming or not -->
-    <bool name="enableDCDTile">true</bool>
+    <!-- <bool name="enableDCDTile">true</bool> -->
 
     <!-- Show/hide the QS tile, if device supports refreshrate switching or not -->
     <bool name="enableRefreshrateTile">true</bool>
