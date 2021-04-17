@@ -17,9 +17,10 @@ using android::base::GetProperty;
 // but with "." at the end and empty entry
 std::vector<std::string> ro_product_props_default_source_order = {
     "",
-    "product.",
     "odm.",
     "vendor.",
+    "product.",
+    "system_ext.",
     "system.",
 };
 
@@ -27,9 +28,10 @@ std::vector<std::string> ro_product_props_default_source_order = {
 // but with "." at the end and empty entry
 std::vector<std::string> ro_fingerprints_default_source_order = {
     "",
-    "product.",
     "odm.",
     "vendor.",
+    "product.",
+    "system_ext.",
     "system.",
     "bootimage.",
 };
@@ -146,9 +148,11 @@ void vendor_load_properties()
     property_override("ro.boot.verifiedbootstate", "green");
     property_override("ro.boot.veritymode", "enforcing");
     property_override("ro.boot.warranty_bit", "0");
+    property_override("ro.build.keys", "release-keys");
     property_override("ro.build.release_type", "release");
     property_override("ro.build.tags", "release-keys");
     property_override("ro.build.type", "user");
+    property_override("ro.build.flavor", "qssi-user");
     property_override("ro.secure", "1");
     property_override("ro.vendor.build.release_type", "release");
     property_override("ro.vendor.build.type", "user");
