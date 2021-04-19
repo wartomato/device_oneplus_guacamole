@@ -17,10 +17,9 @@ using android::base::GetProperty;
 // but with "." at the end and empty entry
 std::vector<std::string> ro_product_props_default_source_order = {
     "",
+    "product.",
     "odm.",
     "vendor.",
-    "product.",
-    "system_ext.",
     "system.",
 };
 
@@ -28,9 +27,9 @@ std::vector<std::string> ro_product_props_default_source_order = {
 // but with "." at the end and empty entry
 std::vector<std::string> ro_fingerprints_default_source_order = {
     "",
+    "product.",
     "odm.",
     "vendor.",
-    "product.",
     "system_ext.",
     "system.",
     "bootimage.",
