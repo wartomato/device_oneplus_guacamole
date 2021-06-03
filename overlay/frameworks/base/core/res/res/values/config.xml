@@ -160,7 +160,7 @@
         <item>421.264</item>
         <item>424.646</item>
         <item>427.6287</item>
-    </array>
+    </array>>
 
     <!-- An array describing the screen's backlight values corresponding to the brightness
          values in the config_screenBrightnessNits array.
