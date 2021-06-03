@@ -107,9 +107,6 @@
 
     <!-- QS Tiles -->
 
-    <!-- Show/hide the QS tile, if device supports DC Dimming or not -->
-    <bool name="enableDCDTile">true</bool>
-
     <!-- Show/hide the QS tile, if device supports refreshrate switching or not -->
     <bool name="enableRefreshrateTile">true</bool>
 
