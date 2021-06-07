@@ -114,6 +114,7 @@ void vendor_load_properties()
             set_ro_product_prop(source, "manufacturer", "OnePlus");
         }
         property_override("ro.build.product", "OnePlus7Pro");
+        property_override("ro.product.device", "OnePlus7Pro");
         property_override("ro.display.series", "OnePlus 7 Pro");
         if (rf_version == 4) {
             /* We are Europe */
