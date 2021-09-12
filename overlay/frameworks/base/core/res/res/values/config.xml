@@ -333,6 +333,9 @@
     <!-- Whether device supports pickupsensor for AD pulse -->
     <bool name="config_dozePulsePickup">true</bool>
 
+    <!-- Whether device supports pickupsensor for AD pulse -->
+    <bool name="config_dozePulseProximity">true</bool>
+
     <!-- Whether device supports wake screen gesture for AD pulse -->
     <bool name="config_dozeWakeLockScreenSensorAvailable">true</bool>
 
