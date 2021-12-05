@@ -24,7 +24,7 @@
     <!-- Whether device supports switching the display refreshrate -->
     <bool name="config_device_supports_switch_refreshrate">true</bool>
     <!-- String values for the min/max refreshrates supported on this device -->
-    <string name="display_min_refresh_rate_low_label">0fps</string>
+    <string name="display_min_refresh_rate_low_label">60fps</string>
     <string name="display_min_refresh_rate_high_label">90fps</string>
 
     <!-- Whether device provides panel options -->
@@ -56,7 +56,7 @@
     <string name="pathSTapToggle">/proc/touchpanel/single_tap_enable</string>
 
     <!-- Path to devices doubletap to wake toggle file -->
-    <string name="pathDoubleTapToWakeToggle">/sys/android_touch/doubletap2wake</string>
+    <!-- <string name="pathDoubleTapToWakeToggle">/sys/android_touch/doubletap2wake</string> -->
 
     <!-- Path to devices sweep to wake toggle file -->
     <!-- <string name="pathSweepToWakeToggle">/sys/android_touch/sweep2wake</string> -->
