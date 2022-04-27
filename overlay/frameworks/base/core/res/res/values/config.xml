@@ -593,6 +593,9 @@
         <item>63</item>
     </integer-array>
 
+    <!-- Whether or not we should show the option to show battery percentage -->
+        <bool name="config_battery_percentage_setting_available">false</bool>
+
     <!-- default refresh rate in the zone defined by brightness and ambient thresholds -->
     <integer name="config_defaultRefreshRateInZone">90</integer>
 
