@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2019 The LineageOS Project
+# Copyright (C) 2022 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -17,34 +17,32 @@ $(call inherit-product, vendor/aicp/config/common_full_phone.mk)
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aicp_guacamole
 PRODUCT_DEVICE := guacamole
-PRODUCT_BRAND := OnePlus
-PRODUCT_MODEL := GM1917
 PRODUCT_MANUFACTURER := OnePlus
+PRODUCT_MODEL := GM1917
+PRODUCT_BRAND := OnePlus
 
 PRODUCT_SYSTEM_NAME := OnePlus7Pro
 PRODUCT_SYSTEM_DEVICE := OnePlus7Pro
 
+PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
+# Misc build characteristics
 PRODUCT_AAPT_CONFIG := xxxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+
 PRODUCT_CHARACTERISTICS := nosdcard
 
-# Build info and overrides
-BUILD_FINGERPRINT := "OnePlus/OnePlus7Pro/OnePlus7Pro:11/RKQ1.201022.002/2206171030:user/release-keys"
+TARGET_SCREEN_HEIGHT := 3120
+TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOTANIMATION_HALF_RES := true
 
-PRODUCT_OVERRIDE_INFO := true
-PRODUCT_OVERRIDE_FINGERPRINT := google/coral/coral:13/TP1A.221005.002/9012097:user/release-keys
+# AICP Device Maintainers
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    DEVICE_MAINTAINERS="Julian Veit (Claymore1297),Ralf Luther (wartomato)"
+
+# Build info and overrides
+BUILD_FINGERPRINT := OnePlus/OnePlus7Pro/OnePlus7Pro:12/SKQ1.211113.001/P.202210120815:user/release-keys
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE=OnePlus7Pro \
     TARGET_NAME=OnePlus7Pro
-
-# AICP Device Maintainers
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    DEVICE_MAINTAINERS="Julian Veit (Claymore1297), Ralf Luther (wartomato)"
-
-PRODUCT_GMS_CLIENTID_BASE := android-oneplus
-
-# Boot animation screen size
-TARGET_SCREEN_HEIGHT := 3120
-TARGET_SCREEN_WIDTH := 1440
-TARGET_BOOTANIMATION_HALF_RES := true

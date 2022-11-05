@@ -1,0 +1,14 @@
+on boot
+    # USB Fastcharge
+    chown system system /sys/kernel/fast_charge/force_fast_charge
+    chmod 0664 /sys/kernel/fast_charge/force_fast_charge
+
+    # System Info
+    chown system system /sys/kernel/gpu/clock_mhz
+    chmod 0664 /sys/kernel/gpu/clock_mhz
+    chown system system /sys/kernel/gpu/gpu_busy
+    chmod 0664 /sys/kernel/gpu/gpu_busy
+
+#    # Pocket judge sysfs permissions
+#    chown system system /sys/kernel/pocket_judge/inpocket
+#    chmod 0664 /sys/kernel/pocket_judge/inpocket
