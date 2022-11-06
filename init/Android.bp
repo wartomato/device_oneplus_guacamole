@@ -19,12 +19,8 @@ prebuilt_etc {
 
 cc_library_static {
     name: "libinit_guacamole",
-    src: "init_guacamole.cpp",
-    device_specific: true,
+    srcs: ["init_guacamole.cpp"],
     recovery_available: true,
-    include_dirs: [
-        "system/libbase/include",
-        "system/core/init"
-    ],
-    whole_static_libs: ["libbase"]
+    include_dirs: ["system/libbase/include","system/core/init"],
+    shared_libs: ["libbase"]
 }
