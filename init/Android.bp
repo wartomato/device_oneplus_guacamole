@@ -10,13 +10,6 @@ prebuilt_etc {
     ramdisk_available: true,
 }
 
-prebuilt_etc {
-    name: "init.aicp-sm8150.rc",
-    src: "init.aicp-sm8150.rc",
-    sub_dir: "init/hw",
-    vendor: true,
-}
-
 cc_library_static {
     name: "libinit_guacamole",
     srcs: ["init_guacamole.cpp"],

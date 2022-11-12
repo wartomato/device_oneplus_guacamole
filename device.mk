@@ -17,7 +17,6 @@ PRODUCT_PACKAGES += \
 # Device init scripts & packages
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    init.aicp-sm8150.rc \
     libinit_guacamole
 
 # Overlays
