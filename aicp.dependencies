@@ -1,22 +1,19 @@
-# Needs gitlab repository "the-muppets/proprietary_vendor_firmware" in local
-# build environment path"vendor/firmware" with revision="lineage-20" for
-# first build to get the latest vendor firmware flashed on initial install!
 [
+#  {
+#    "remote":      "gitlab",
+#    "repository":  "the-muppets/proprietary_vendor_firmware",
+#    "target_path": "vendor/firmware",
+#    "clone-depth": "1",
+#    "branch":      "lineage-20"
+#  },
   {
-    "remote":      "gitlab",
-    "repository":  "the-muppets/proprietary_vendor_firmware",
-    "target_path": "vendor/firmware",
-    "clone-depth": "1",
+    "repository":  "TheMuppets/proprietary_vendor_oneplus_guacamole",
+    "target_path": "vendor/oneplus/guacamole",
     "branch":      "lineage-20"
   },
   {
     "repository":  "AICP/device_oneplus_sm8150-common",
     "target_path": "device/oneplus/sm8150-common",
     "branch":      "t13.0"
-  },
-  {
-    "repository":  "TheMuppets/proprietary_vendor_oneplus_guacamole",
-    "target_path": "vendor/oneplus/guacamole",
-    "branch":      "lineage-20"
   }
 ]
