@@ -102,7 +102,7 @@ void vendor_load_properties()
         property_override("ro.display.series", "OnePlus 7 Pro");
         if (rf_version == 4) {
             /* We are Europe */
-            property_override("ro.build.fingerprint", "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:12/SKQ1.211113.001/P.202210120815:user/release-keys");
+            property_override("ro.build.fingerprint", "OnePlus/OnePlus7Pro_EEA/OnePlus7Pro:12/SKQ1.211113.001/P.202210112115:user/release-keys");
             for (const auto &source : ro_product_props_default_source_order) {
                 set_ro_product_prop(source, "model", "GM1913");
             }
