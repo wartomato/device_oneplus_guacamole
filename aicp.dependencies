@@ -1,11 +1,11 @@
 [
-#  {
-#    "remote":      "gitlab",
-#    "repository":  "the-muppets/proprietary_vendor_firmware",
-#    "target_path": "vendor/firmware",
-#    "clone-depth": "1",
-#    "branch":      "lineage-20"
-#  },
+  {
+    "remote":      "gitlab",
+    "repository":  "the-muppets/proprietary_vendor_firmware",
+    "target_path": "vendor/firmware",
+    "clone-depth": "1",
+    "branch":      "lineage-20"
+  },
   {
     "repository":  "TheMuppets/proprietary_vendor_oneplus_guacamole",
     "target_path": "vendor/oneplus/guacamole",
