@@ -5,7 +5,7 @@ It was released in May 2019.
 
 
 |                Hardware | Spec Sheet                                                                                                                    |
-| ----------------------: | :---------------------------------------------------------------------------------------------------------------------------- |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 |                     CPU | Octa-core (1x2.84 GHz Kryo 485 & 3x2.42 GHz Kryo 485 & 4x1.78 GHz Kryo 485)                                                   |
 |                 Chipset | Qualcomm SM8150 Snapdragon 855 (7 nm)                                                                                         |
 |                     GPU | Adreno 640                                                                                                                    |
@@ -44,3 +44,33 @@ _baseband = defined baseband by the vendor system prop "ro.boot.rf_version"_
 Copyright 2019 - The AICP Project.
 
 ![OnePlus 7 Pro](https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-7-pro-4.jpg "OnePlus 7 Pro")
+
+---
+
+# Basic Flashing Instructions
+
+**Pre-installation:**
+
+- **OOS 12 firmware is mandatory and is build into the ROM**
+- Download a recovery image, e.g. LineageOS recovery image
+- Optionally download a GApps package of your choice, recommended are MindTheGapps 13
+
+**First time installation (clean flash):**
+
+- Press and hold the volume down button and the power button, and release the power button when you see the OnePlus logo.
+- Keep holding the volume down button until you see the recovery screen.
+  connect the phone via USB to the PC.
+- Wipe the device (factory reset)
+
+1. Choose "Apply update" from the menu. In the next screen choose "Apply from ADB" (sideload)
+
+   `adb sideload aicp_guacamole_t-18.0-WEEKLY-20221112.zip`
+
+2. After it finished, back to main menu and choose "Advanced", choose "Reboot to recovery"
+3. in recovery again repeat step (1) and (2)
+4. Choose "Apply update" from the menu.
+5. Choose "Apply from ADB" (sideload)
+
+   `adb sideload MindTheGapps-13.0.0-arm64-20221025_100653.zip`
+
+6. After it finishes, reboot the system.
