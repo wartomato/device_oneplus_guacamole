@@ -5,9 +5,6 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-    <!-- Slow brightness animation ramp rate in brightness units per second-->
-    <integer translatable="false" name="config_brightness_ramp_rate_slow">60</integer>
-
     <!-- Whether or not to skip the initial brightness ramps when the display transitions to
          STATE_ON. Setting this to true will skip the brightness ramp to the last stored active
          brightness value and will repeat for the following ramp if autobrightness is enabled. -->
@@ -39,7 +36,7 @@
     <bool name="config_cellBroadcastAppLinks">true</bool>
 
     <!-- Disable lockscreen translucent decor by default -->
-    <bool name="config_enableLockScreenTranslucentDecor">true</bool>
+    <bool name="config_enableLockScreenTranslucentDecor">false</bool>
 
     <!-- Disable rounded corners on windows to improve graphics performance -->
     <bool name="config_supportsRoundedCornersOnWindows">true</bool>
@@ -120,7 +117,7 @@
     <integer name="config_defaultRefreshRateInZone">90</integer>
 
     <!-- Whether or not we should show the option to show battery percentage -->
-        <bool name="config_battery_percentage_setting_available">false</bool>
+    <bool name="config_battery_percentage_setting_available">false</bool>
 
     <!-- Support long press power for torch -->
     <bool name="config_supportLongPressPowerWhenNonInteractive">true</bool>
