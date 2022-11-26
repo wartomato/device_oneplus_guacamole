@@ -4,9 +4,4 @@ bluetooth.device.default_name=OnePlus 7 Pro
 # ADDITIONAL VENDOR BUILD PROPERTIES
 persist.sys.oem.region=OverSeas
 persist.sys.oem_smooth=1
-ro.vendor.build.real.device=true
 
-# VENDOR BUILD PROPERTIES
-vendor.product.device=guacamole
-vendor.product.manufacturer=OPD
-vendor.usb.product_string=OnePlus7Pro
