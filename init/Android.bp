@@ -9,10 +9,3 @@ prebuilt_etc {
     vendor: true,
     ramdisk_available: true,
 }
-
-cc_library_static {
-    name: "libinit_guacamole",
-    srcs: ["init_guacamole.cpp"],
-    recovery_available: true,
-    shared_libs: ["libbase"]
-}
