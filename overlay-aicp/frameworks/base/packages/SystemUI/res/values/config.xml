@@ -5,9 +5,6 @@
 -->
 <resources>
 
-    <!-- Preferred refresh rate at keyguard, if supported by the display -->
-    <integer name="config_keyguardRefreshRate">60</integer>
-
     <!-- Max visible notification icons -->
     <integer name="config_maxVisibleNotificationIcons">6</integer>
     <integer name="config_maxVisibleNotificationIconsOnLock">7</integer>
@@ -15,10 +12,7 @@
     <!-- Color of the UDFPS Pressed view -->
     <color name="config_udfpsColor">#00ff00</color>
 
-    <!-- Show mic or phone affordance on Keyguard -->
-    <bool name="config_keyguardShowLeftAffordance">true</bool>
-
-    <!-- Show camera affordance on Keyguard -->
-    <bool name="config_keyguardShowCameraAffordance">true</bool>
+    <!-- Preferred refresh rate at keyguard, if supported by the display -->
+    <integer name="config_keyguardRefreshRate">60</integer>
 
 </resources>
