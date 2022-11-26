@@ -14,7 +14,6 @@ TARGET_SCREEN_DENSITY := 560
 
 # Init
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_guacamole
-TARGET_RECOVERY_DEVICE_MODULES := libinit_guacamole
 
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true

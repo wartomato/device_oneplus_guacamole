@@ -6,11 +6,7 @@
 #include <android-base/properties.h>
 #include <android-base/strings.h>
 
-// #include "property_service.h" turned off because of missing chroma.h
-#include "vendor_init.h"
-
 #define _REALLY_INCLUDE_SYS__SYSTEM_PROPERTIES_H_
-#include <sys/system_properties.h>
 #include <sys/_system_properties.h>
 
 using android::base::GetProperty;
@@ -19,15 +15,10 @@ using android::base::GetProperty;
 // but with "." at the end and empty entry
 std::vector<std::string> ro_product_props_default_source_order = {
     "",
-    "bootimage.",
-    "odm_dlkm.",
-    "odm.",
-    "oem.",
     "product.",
-    "system_ext.",
-    "system.",
-    "vendor_dlkm.",
+    "odm.",
     "vendor.",
+    "system.",
 };
 
 void property_set(char const prop[], char const value[])
