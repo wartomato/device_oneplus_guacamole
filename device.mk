@@ -25,7 +25,7 @@ PRODUCT_PACKAGES += \
 # Device init scripts & packages
 PRODUCT_PACKAGES += \
     fstab.qcom \
-    libinit_guacamole
+    init.oplus.hw.rc
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
