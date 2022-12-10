@@ -2,6 +2,5 @@
 bluetooth.device.default_name=OnePlus 7 Pro
 
 # ADDITIONAL VENDOR BUILD PROPERTIES
-persist.sys.oem.region=OverSeas
-persist.sys.oem_smooth=1
-
+ro.boot.project_name=18821
+ro.vendor.boot.project_name=18821
