@@ -7,9 +7,6 @@
 on property:ro.boot.rf_version=1
     setprop ro.boot.hardware.revision "CN"
 
-on property:ro.boot.rf_version=2
-    setprop ro.boot.hardware.revision "TMO"
-
 on property:ro.boot.rf_version=3
     setprop ro.boot.hardware.revision "IN"
 
