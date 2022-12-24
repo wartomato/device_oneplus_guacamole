@@ -32,10 +32,12 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aicp
-
-PRODUCT_ENFORCE_RRO_TARGETS := *
+PRODUCT_PACKAGES += \
+    AICPFrameworksResTarget \
+    AICPSystemUIResTarget \
+    ApertureResTarget \
+    OPlusExtrasResTarget \
+    OPlusDozeTarget
 
 PRODUCT_PACKAGES += \
     OPlusFrameworksResTarget \
