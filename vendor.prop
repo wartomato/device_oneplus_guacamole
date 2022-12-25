@@ -2,7 +2,7 @@
 bluetooth.device.default_name=OnePlus 7 Pro
 
 # ADDITIONAL VENDOR BUILD PROPERTIES
-ro.boot.project_name=18821
-ro.vendor.boot.project_name=18821
+persist.sys.oem_smooth=1
 ro.oplus.version.base=18815.50.3.2022101204580411418410
 ro.oplus.image.base.version=18815.50.3.2022101204580411418410
+

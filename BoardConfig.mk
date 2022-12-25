@@ -12,9 +12,6 @@ DEVICE_PATH := device/oneplus/guacamole
 # Display
 TARGET_SCREEN_DENSITY := 560
 
-# Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_oplus
-
 # Partitions
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
