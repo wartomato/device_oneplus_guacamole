@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
 
 # ih8sn config(s)
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/ih8sn.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf
+    $(LOCAL_PATH)/configs/ih8sn.conf.rf5:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf.rf5 \
+    $(LOCAL_PATH)/configs/ih8sn.conf.rf4:$(TARGET_COPY_OUT_SYSTEM)/etc/ih8sn.conf.rf4
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
