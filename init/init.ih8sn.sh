@@ -28,24 +28,33 @@
 #
 
 #
-# set the vendor path to get some sh commands from the toybox
+# set the system path to get some sh commands from the toybox
 #
 export PATH=/vendor/bin
 
 #
 # get properties and if a valid config file is found, rename it to ih8sn.conf
 #
-serialno=`getprop ro.boot.serialno`
-product=`getprop ro.build.product`
-model=`getprop ro.product.model`
-rf_version=`getprop ro.boot.rf_version`
 
-if [[ -f `/system/etc/ih8sn.conf.${serialno}` ]]; then
-    mv /system/etc/ih8sn.conf.${serialno} /system/etc/ih8sn.conf
-elif [[ -f `/system/etc/ih8sn.conf.${product}` ]]; then
-    mv /system/etc/ih8sn.conf.${product} /system/etc/ih8sn.conf
-elif [[ -f `/system/etc/ih8sn.conf.${model}` ]]; then
-    mv /system/etc/ih8sn.conf.${model} /system/etc/ih8sn.conf
-else [[ -f `/system/etc/ih8sn.conf.rf${rf_version}` ]]; then
-    mv /system/etc/ih8sn.conf.rf${rf_version} /system/etc/ih8sn.conf
+serialno=`getprop ro.boot.serialno`
+
+if [ -f /system/etc/ih8sn.conf.${serialno} ]; then
+    cp /system/etc/ih8sn.conf.${serialno} ih8sn.conf
+fi
+
+product=`getprop ro.build.product`
+
+if [ -f /system/etc/ih8sn.conf.${product} ]; then
+    cp /system/etc/ih8sn.conf.${product} ih8sn.conf
+fi
+
+model=`getprop ro.product.model`
+
+if [ -f /system/etc/ih8sn.conf.${model} ]; then
+    cp /system/etc/ih8sn.conf.${model} ih8sn.conf
+fi
+
+rf_version=`getprop ro.boot.rf_version`
+if [ -f /system/etc/ih8sn.conf.rf${rf_version} ]; then
+    cp /system/etc/ih8sn.conf.rf${rf_version} ih8sn.conf
 fi

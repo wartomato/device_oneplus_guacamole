@@ -13,7 +13,7 @@ prebuilt_etc {
 sh_binary {
     name: "init.ih8sn.sh",
     src: "init.ih8sn.sh",
-    device_specific: true,
+    vendor: true,
 }
 
 prebuilt_etc {
