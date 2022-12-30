@@ -10,12 +10,6 @@ prebuilt_etc {
     ramdisk_available: true,
 }
 
-sh_binary {
-    name: "init.ih8sn.sh",
-    src: "init.ih8sn.sh",
-    vendor: true,
-}
-
 prebuilt_etc {
     name: "init.oplus.hw.rc",
     src: "init.oplus.hw.rc",
