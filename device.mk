@@ -25,9 +25,7 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts & packages
 PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.oplus.hw.rc \
-    init.ih8sn.sh
+    fstab.qcom
 
 # ih8sn config(s)
 PRODUCT_COPY_FILES += \
