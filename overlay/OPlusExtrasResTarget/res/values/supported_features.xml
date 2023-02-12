@@ -29,7 +29,7 @@
     <bool name="config_deviceSupportsUSB2FC">true</bool>
 
     <!-- Whether device supports System vibration intensity -->
-    <bool name="config_deviceSupportsSysVib">true</bool>
+    <bool name="config_deviceSupportsSysVib">false</bool>
 
     <!-- Whether to show Jitter Test -->
     <bool name="config_deviceSupportsJitterTest">true</bool>
