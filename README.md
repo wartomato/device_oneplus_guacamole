@@ -24,6 +24,7 @@ It was released in May 2019.
 
 | codename | Devicename    | Target area   | projectname | baseband (rf) |
 | -------- | ------------- | ------------- | ----------- | ------------- |
+| GM1911   | OnePlus 7 Pro | India         | 18821       | 3             |
 | GM1913   | OnePlus 7 Pro | Europe (-EEA) | 18821       | 4             |
 | GM1917   | OnePlus 7 Pro | Global/US     | 18821       | 5             |
 
@@ -33,7 +34,6 @@ It was released in May 2019.
 | codename | Devicename       | Target area    | projectname | baseband (rf) |
 | -------- | ---------------- | -------------- | ----------- | ------------- |
 | GM1910   | OnePlus 7 Pro    | China          | 18821       | 1             |
-| GM1911   | OnePlus 7 Pro    | India          | 18821       | 3             |
 | GM1915   | OnePlus 7 Pro    | T-Mobile       | 18831       | -             |
 | GM1920   | OnePlus 7 Pro NR | Europe (5G)    | 18827       | -             |
 | GM1925   | OnePlus 7 Pro NR | US (Sprint 5G) | 18825       | 5             |
