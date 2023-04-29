@@ -4,7 +4,7 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aicp.oplus.OPlusParts.overlay.target">
+    package="com.aicp.oplus.OplusParts.overlay.target">
 
     <overlay
         android:isStatic="true"

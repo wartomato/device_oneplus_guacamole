@@ -44,11 +44,6 @@
     <!-- Measuered FPS sysfs node path -->
     <string name="node_fps_info_service">/sys/class/drm/sde-crtc-0/measured_fps</string>
 
-    <!-- TP Edge Limit procfs node path, true, false -->
-    <string name="node_tp_edge_limit_mode_switch">/proc/touchpanel/oplus_tp_direction</string>
-    <string name="node_tp_edge_limit_mode_switch_true">1</string>
-    <string name="node_tp_edge_limit_mode_switch_false">0</string>
-
     <!-- USB 2.0 Force fastcharge sysfs node path, true, false -->
     <string name="node_usb2_fast_charge_mode_switch">/sys/module/oplus_charger/parameters/force_fast_charge</string>
     <string name="node_usb2_fast_charge_mode_switch_true">1</string>
