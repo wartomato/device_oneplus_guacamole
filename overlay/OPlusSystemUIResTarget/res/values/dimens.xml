@@ -25,10 +25,6 @@
     <!-- Location on the screen of the center of the physical power button. -->
     <dimen name="physical_power_button_center_screen_location_y">1250px</dimen>
 
-    <!-- Location on the screen of the center of the physical volume up/down buttons. -->
-    <dimen name="physical_volume_up_button_center_screen_location_y">750px</dimen>
-    <dimen name="physical_volume_down_button_center_screen_location_y">1025px</dimen>
-
     <!-- Recognizing fingerprint animation -->
     <dimen name="udfps_animation_size">176dp</dimen>
     <dimen name="udfps_animation_offset">28dp</dimen>
