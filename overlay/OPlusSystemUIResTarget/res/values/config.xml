@@ -5,8 +5,6 @@
 -->
 <resources>
 
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">142</integer>
 
     <!-- Notifications are sized to match the width of two (of 4) qs tiles in landscape. -->
     <bool name="config_skinnyNotifsInLandscape">true</bool>
