@@ -5,4 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_guacamole.mk
+    $(LOCAL_DIR)/aicp_guacamole.mk
+
+COMMON_LUNCH_CHOICES := \
+    aicp_guacamole-user \
+    aicp_guacamole-userdebug \
+    aicp_guacamole-eng
