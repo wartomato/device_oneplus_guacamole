@@ -44,6 +44,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+# tri-state key
+PRODUCT_PACKAGES += \
+    tri-state-key_daemon
+
 # Inherit from the common OEM chipset makefile.
 $(call inherit-product, device/oneplus/sm8150-common/common.mk)
 
