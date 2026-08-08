@@ -785,6 +785,14 @@
         <path name="echo-reference-voip headphones" />
     </path>
 
+    <path name="echo-reference-voip bt-sco-wb">
+        <path name="echo-reference-voip headphones" />
+    </path>
+
+    <path name="echo-reference-voip bt-sco-swb">
+        <path name="echo-reference-voip headphones" />
+    </path>
+
 <!--#ifdef   -->
 <!-- liuhaituo@MM.Audio, 2020/06/22, support voice assitant used 4ch aec record -->
     <path name="echo-reference aec-speaker">

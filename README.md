@@ -41,7 +41,7 @@ It was released in May 2019.
 _projectname = android projectname defined by the vendor system props "ro.boot.project_name" or "ro.vendor.boot.project_name"_
 _baseband = defined baseband by the vendor system prop "ro.boot.rf_version"_
 
-Copyright 2019 - The AICP Project.
+Copyright 2026 - The AICP Project.
 
 ![OnePlus 7 Pro](https://fdn2.gsmarena.com/vv/pics/oneplus/oneplus-7-pro-4.jpg "OnePlus 7 Pro")
 
@@ -53,7 +53,7 @@ Copyright 2019 - The AICP Project.
 
 - **OOS 12 firmware is mandatory and is build into the ROM**
 - Download a recovery image, e.g. LineageOS recovery image
-- Optionally download a GApps package of your choice, recommended are MindTheGapps 13
+- Optionally download a GApps package of your choice, recommended are MindTheGapps 16
 
 **First time installation (clean flash):**
 
@@ -64,13 +64,13 @@ Copyright 2019 - The AICP Project.
 
 1. Choose "Apply update" from the menu. In the next screen choose "Apply from ADB" (sideload)
 
-   `adb sideload aicp_guacamole_t-18.0-WEEKLY-20221112.zip`
+   `adb sideload aicp_guacamole_w-21.2-WEEKLY-20260310.zip`
 
 2. After it finished, back to main menu and choose "Advanced", choose "Reboot to recovery"
 3. in recovery again repeat step (1) and (2)
 4. Choose "Apply update" from the menu.
 5. Choose "Apply from ADB" (sideload)
 
-   `adb sideload MindTheGapps-13.0.0-arm64-20221025_100653.zip`
+   `adb sideload MindTheGapps-16.0.0-arm64-20260216_221300.zip`
 
 6. After it finishes, reboot the system.
