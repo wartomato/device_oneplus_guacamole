@@ -7,6 +7,9 @@
 # Include the common OEM chipset BoardConfig.
 include device/oneplus/sm8150-common/BoardConfigCommon.mk
 
+# Charger
+WITH_AICP_CHARGER := true
+
 DEVICE_PATH := device/oneplus/guacamole
 
 # Display
